@@ -1,0 +1,55 @@
+---
+title: "epl_tets"
+output: html_document
+date: "2023-09-09"
+---
+
+```{r}
+
+```
+
+
+
+
+```{r}
+
+data <- read.csv("/Users/grema/testfolder/()_seasondata.csv")
+```
+
+
+
+```{r}
+print(data)
+```
+
+
+```{r}
+#model to look at defensive rating only 
+#linear regression between conceded goals/game and deep allowed, oppda, and npxGA
+model1 <- lm(conceded/matches ~ deep_allowed + oppda_coef + npxGA, data = data)
+```
+
+```{r}
+summary(model1) 
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
